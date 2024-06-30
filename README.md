@@ -1,2 +1,5 @@
-# GeoTrackingOfWaste
-Field Project
+This project consists of two modules
+User Module: In this module user can upload waste images and add location details. 
+Here student asking to display location in map but the problem is to display location in map we need to have latitude and longitude values then only we can display exact location in map and we don’t have any sensor or devices to track latitude and longitude. So we can’t use maps.
+Waste Collector Module: In this module waste collectors will upload video and this video will start playing and we need to consider this video as its playing from webcam or drone. Video player continuously scan images to find pattern match between current location and user uploaded waste images. If pattern in video matched with user uploaded waste images then application will inform to waste collector via bounding boxes. 
+Note: here we are matching images using pattern match technique which is not 100% reliable for matching. If two different images having little similar pattern or colour then this technique will detect the match. So sometime two different images can also raise output as match.
